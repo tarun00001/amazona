@@ -9,3 +9,12 @@
   c) create router for product screen  
 8 a) added express server
   b) added nodemon as dev dependency
+9 a) set proxy in package.json in frontend folder
+  b) npm i axios
+  c) use state hook
+  d) use effect hook
+  e) use reducer hook
+10 manage state by reducer hook
+  a) define reducer
+  b) update fetch data
+  c) get state from reducer 

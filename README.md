@@ -7,3 +7,5 @@
 7 a) npm i react-router-dom
   b) create route for home screen
   c) create router for product screen  
+8 a) added express server
+  b) added nodemon as dev dependency

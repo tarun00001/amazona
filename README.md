@@ -19,3 +19,4 @@
   b) update fetch data
   c) get state from reducer 
 11 Added bootstrap ui  
+12 components:- 1)product 2)rating

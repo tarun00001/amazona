@@ -11,6 +11,11 @@ body {
   min-height: 100vh;
 }
 
+.btn-primary{
+  background-color: #f0c040;
+  color: #000000;
+}
+
 main {
   flex: 1;
 }
@@ -19,6 +24,10 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.rating span{
+  color: #ffc000;
 }
 
 .product{

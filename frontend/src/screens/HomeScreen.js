@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useReducer } from 'react'
+import React, { useEffect, useReducer } from 'react'
 
 // import data from '../data'
 import logger from 'use-reducer-logger'
@@ -6,6 +6,7 @@ import axios from 'axios';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Product from '../components/Product';
+import { Helmet } from 'react-helmet-async';
 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -40,7 +41,11 @@ const HomeScreen = () => {
         fetchData()
     }, [])
     return (
-        <div> <h1>Featured Products</h1>
+        <div>
+            <Helmet>
+                    <title>Amazona</title>
+            </Helmet>
+             <h1>Featured Products</h1>
             <div className="products">
                 {loading ? (<div>Loading...</div>) : error ? (<div></div>) :
                     (

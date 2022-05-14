@@ -20,3 +20,6 @@
   c) get state from reducer 
 11 Added bootstrap ui  
 12 components:- 1)product 2)rating
+13 create product detail screen
+  1. fetch products
+  2. create 3 columns for image, info and screen.

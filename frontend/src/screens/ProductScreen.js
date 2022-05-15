@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/esm/Card'
 import ListGroup from 'react-bootstrap/esm/ListGroup'
 import Badge from 'react-bootstrap/esm/Badge'
 import Button from 'react-bootstrap/esm/Button'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import Rating from '../components/Rating'
 import { Helmet } from 'react-helmet-async'
 import LoadingBox from '../components/LoadingBox'
@@ -28,6 +28,7 @@ const reducer = (state, action) => {
 }
 
 const ProductScreen = () => {
+  const navigate = useNavigate();
   const params = useParams();
   const { slug } = params;
   const [{ loading, error, product }, dispatch] = useReducer(reducer, {
@@ -58,8 +59,11 @@ const ProductScreen = () => {
       window.alert('Sorry. Product is out of stock');
       return;
     }
-    ctxDispatch({type: 'CART_ADD_ITEM', payload: {...product, quantity}})
+    ctxDispatch({type: 'CART_ADD_ITEM', payload: {...product, quantity}});
+    navigate('/cart');
   }
+
+
 
   return  loading ? (
     <LoadingBox/>

@@ -60,4 +60,8 @@
     4. seed sample product   
 22. Seed Sample Users
     1. create user model
-    2. seed sample users     
+    2. seed sample users   
+23. Create Signin Backend API
+    1. create signin api
+    2. npm install jsonwebtoken
+    3. define generateToken      

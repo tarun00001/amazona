@@ -1,0 +1,33 @@
+{
+  "name": "amazona",
+  "version": "1.0.0",
+  "description": "1 Introduction\r 2 Install Tools\r 3 Create React App\r 4 Create Git Repository\r 6 List feature product and added css\r 7 a) npm i react-router-dom\r   b) create route for home screen\r   c) create router for product screen  \r 8 a) added express server\r   b) added nodemon as dev dependency\r 9 a) set proxy in package.json in frontend folder\r   b) npm i axios\r   c) use state hook\r   d) use effect hook\r   e) use reducer hook\r 10 manage state by reducer hook\r   a) define reducer\r   b) update fetch data\r   c) get state from reducer \r 11 Added bootstrap ui  \r 12 components:- 1)product 2)rating\r 13 create product detail screen\r   1. fetch products\r   2. create 3 columns for image, info and screen.\r 14 create loading and message component.\r   1. create loading component\r   2. use spinner component\r   3. create message component \r   4. create utils.js to define getError function  \r 15 Implement Add to cart\r   1. create React context\r   2. define reducer\r   3. create store provider\r   4. implement add to cart button click handler  \r 16 complete add to cart\r   1. check exist item in the cart\r   2. check out in stock in backend  \r 17 Create cart screen\r   1. create 2 column\r   2. display items list\r   3. create action column  \r 18 complete cart screen\r   1. click handler for inc/dec item\r   2. click handler for remove item\r   3. click handler for checkout\r 19  create signin screen\r   1. create signin form\r   2. add email and password\r   3. add signin button  \r 20. connect to mongodb database\r   1. create atlas mongodb database\r   2. install local mongodb database\r   3. npm i mongoose\r   4. connect to mongodb database\r 21. Seed Sample Products\r     1. create Product model\r     2. create seed route\r     3. use route in server.js\r     4. seed sample product   \r 22. Seed Sample Users\r     1. create user model\r     2. seed sample users   \r 23. Create Signin Backend API\r     1. create signin api\r     2. npm install jsonwebtoken\r     3. define generateToken      \r 24. Complete Signin Screen\r     1. handle submit action\r     2. save token in store and local storage\r     3. show user name in header   \r 25. Create Shipping Screen\r     1. create form inputs\r     2. handle save shipping address\r     3. add checkout wizard bar    \r 26. Create Sign Up Screen\r     1. create input forms\r     2. handle submit\r     3. create backend api   \r 27. Implement Select Payment Method Screen\r     1. create input forms\r     2. handle submit   \r 28. Create Place Order Screen\r     1. show cart items, payment and address\r     2. handle place order action\r     3. create order create api \r     4. calculate order summary   \r 28. Implement Place Order Action\r     1. handle place order action\r     2. create order create api       \r 30. Create Order Screen\r     1. create backend api for order/:id\r     2. fetch order api in frontend\r     3. show order information in 2 cloumns\r 31. Pay Order By PayPal\r     1. generate paypal client id\r     2. create api to return client id\r     3. install react-paypal-js\r     4. use PayPalScriptProvider in index.js\r     5. use usePayPalScriptReducer in Order Screen\r     6. implement loadPaypalScript function\r     7. render paypal button\r     8. implement onApprove payment function\r     9. create pay order api in backend    \r 32. Display Order History\r     1. create order screen\r     2. create order history api\r     3. use api in the frontend    \r 33. Create Profile Screen\r     1. get user info from context\r     2. show user information\r     3. create user update api\r     4. update user info   \r 33. Publish To Heroku\r     1. create and config node project\r     2. serve build folder in frontend folder\r     3. Create heroku account\r     4. connect it to github\r     5. Create mongodb atlas database\r     6. Set database connection in heroku env variables\r     7. Commit and push",
+  "main": "index.js",
+  "dependencies": {
+    "history": "^5.3.0",
+    "react-dom": "^18.1.0",
+    "loose-envify": "^1.4.0",
+    "react": "^18.1.0",
+    "react-router": "^6.3.0",
+    "regenerator-runtime": "^0.13.9",
+    "scheduler": "^0.22.0",
+    "react-router-dom": "^6.3.0",
+    "js-tokens": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "cd backend && npm install  && cd ../frontend && npm install && npm run build",
+    "start": "node backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarun00001/amazona.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarun00001/amazona/issues"
+  },
+  "homepage": "https://github.com/tarun00001/amazona#readme"
+}
